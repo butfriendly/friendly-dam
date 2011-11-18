@@ -6,16 +6,16 @@ package de.soulworks.dam.webservice.dao;
 public class EktorpDaoFactory extends DaoFactory {
 	@Override
 	public AssetDao getAssetDao() {
-		return null;  //To change body of implemented methods use File | Settings | File Templates.
+		return null;
 	}
 
 	@Override
 	public BucketDao getBucketDao() {
-		return null;  //To change body of implemented methods use File | Settings | File Templates.
+		return null;
 	}
 
 	@Override
 	public CustomerDao getCustomerDao() {
-		return null;  //To change body of implemented methods use File | Settings | File Templates.
+		return null;
 	}
 }
