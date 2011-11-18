@@ -2,6 +2,8 @@ package de.soulworks.dam.webservice.service;
 
 import de.soulworks.dam.domain.Account;
 import de.soulworks.dam.webservice.ServiceTest;
+import org.joda.time.Instant;
+import org.joda.time.ReadableInstant;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -36,6 +38,29 @@ public class AccountServiceTest extends ServiceTest {
 
 		accountService.deleteAccount(account);
 	}
+
+    @Test (expected=IllegalStateException.class)
+    public void testCreateOfDupeAccounts() {
+        Account account = Account.create()
+                .setCustomerUid("customer1")
+                .setUsername("bob")
+                .setPasswordHash("hash");
+
+        accountService.createAccount(account);
+
+        Assert.assertNotNull(account.getId());
+        Assert.assertNotNull(account.getRevision());
+
+        Account anotherAccount = Account.create()
+                .setCustomerUid("customer1")
+                .setUsername("bob")
+                .setPasswordHash("hash");
+
+        accountService.createAccount(anotherAccount);
+
+        Assert.assertNotNull(anotherAccount.getId());
+        Assert.assertNotNull(anotherAccount.getRevision());
+    }
 
 	@Test
 	public void testDeleteAccount() {

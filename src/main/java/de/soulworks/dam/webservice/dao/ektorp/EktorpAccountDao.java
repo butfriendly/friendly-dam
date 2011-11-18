@@ -72,7 +72,13 @@ public class EktorpAccountDao  extends CouchDbRepositorySupport<Account> impleme
 
 	@Override
 	public void createAccount(Account account) {
-		db.create(account);
+        Account existingAccount = getAccount(account.getUsername());
+        if (existingAccount == null) {
+            db.create(account);
+        } else {
+            log.error("The account {} already exist.", account.getUsername());
+            throw new IllegalStateException("Duplicate account");
+        }
 	}
 
 	@Override
