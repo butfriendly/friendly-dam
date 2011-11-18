@@ -54,14 +54,12 @@ public class InternationalStandardRecordingCodeTest {
 		Assert.assertEquals("USPR37300012", isrc.toString());
 	}
 
-	@Test
-	@ExpectedException(IllegalArgumentException.class)
+	@Test (expected=IllegalArgumentException.class)
 	public void testInvalidIsrcWithHyphens() {
 		InternationalStandardRecordingCode isrc = InternationalStandardRecordingCode.createFromString("US-S1Z-73-00012");
 	}
 
-	@Test
-	@ExpectedException(IllegalArgumentException.class)
+	@Test (expected=IllegalArgumentException.class)
 	public void testInvalidRegistrant() {
 		InternationalStandardRecordingCode isrc = InternationalStandardRecordingCode.createFromString("USS1Z7300012");
 	}
