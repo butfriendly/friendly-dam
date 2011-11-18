@@ -1,0 +1,17 @@
+<bucket uid="com.example.bucket.heck4">
+  <name>
+    <item language="en">My name2</item>
+    <item language="de">Mein Name2</item>
+  </name>
+  <description>
+    <item language="en">My2 description</item>
+    <item language="de">Meine2 Beschreibung</item>
+  </description>
+  <constraints>
+    <value validFrom="2008-11-13T12:23:30-0800">Test</value>
+    <value validFrom="2007-11-13T12:23:30-0800">Test2</value>
+  </constraints>
+  <profiles>
+    <profile>what</profile>
+  </profiles>
+</bucket>

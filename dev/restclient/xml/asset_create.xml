@@ -1,0 +1,11 @@
+<asset uid="asset.1282575097321" type="image"
+  originator_uid="new.customer">
+  <title>
+    <item language="en">My new asset</item>
+    <item language="de">Mein neues asset</item>
+  </title>
+  <description>
+    <item language="en">My first and new asset</item>
+    <item language="de">Mein erstes und neues Asset</item>
+  </description>
+</asset>

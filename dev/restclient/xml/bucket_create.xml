@@ -1,0 +1,10 @@
+<bucket uid="__UID__">
+    <name>
+        <value language="en">EN Name</value>
+        <value language="de">DE Name</value>
+    </name>
+    <description>
+        <value language="en">EN Desc</value>
+        <value language="de">DE Desc</value>
+    </description>
+</bucket>
