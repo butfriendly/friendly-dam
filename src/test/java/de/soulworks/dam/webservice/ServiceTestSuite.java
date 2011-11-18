@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * @author Christian Schmitz <csc@soulworks.de
+ * @author Christian Schmitz <csc@soulworks.de>
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({

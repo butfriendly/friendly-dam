@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.io.IOException;
 
 /**
- * @author Christian Schmitz <csc@soulworks.de
+ * @author Christian Schmitz <csc@soulworks.de>
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:/spring/app-config.xml", "classpath:/spring/ektorp-config.xml", "classpath:/spring/jcouchdb-config.xml", "classpath:/spring/jms-config.xml"}, inheritLocations = true)
