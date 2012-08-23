@@ -39,7 +39,7 @@ abstract public class ServiceTest {
 			response = hc.execute(put);
 			response.getEntity().getContent().close();
 		} catch (IOException e) {
-			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+			e.printStackTrace();
 		}
 	}
 

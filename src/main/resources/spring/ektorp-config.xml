@@ -3,15 +3,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:couchdb="http://www.ektorp.org/schema/couchdb"
 	xsi:schemaLocation="
 	    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.ektorp.org/schema/couchdb http://www.ektorp.org/schema/couchdb/couchdb.xsd">
 
     <util:properties id="couchdbProperties" location="classpath:/couchdb.properties"/>
 
     <bean id="ektorpDatabase" class="org.ektorp.impl.StdCouchDbConnector">
-        <constructor-arg value="dam"/>
+        <constructor-arg value="dam-ektorp"/>
         <constructor-arg>
             <bean id="couchDbInstance" class="org.ektorp.impl.StdCouchDbInstance">
                 <constructor-arg>

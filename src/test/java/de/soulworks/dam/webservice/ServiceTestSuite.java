@@ -13,7 +13,7 @@ import org.junit.runners.Suite;
 	AssetServiceTest.class,
 	BucketServiceTest.class,
 	CustomerServiceTest.class,
-	ListServiceTest.class,
+//	ListServiceTest.class,
 	UploadServiceTest.class
 })
 public class ServiceTestSuite {

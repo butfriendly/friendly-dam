@@ -15,7 +15,7 @@
 
     <bean id="systemDatabase" class="org.jcouchdb.db.Database">
         <constructor-arg ref="couchDBServer"/>
-        <constructor-arg value="dam"/>
+        <constructor-arg value="dam-jcouchdb"/>
         <!-- We inject our own helper for identifying entities -->
         <!--
         <property name="documentPropertyHandler" ref="couchDocumentHelper" />
